@@ -1,0 +1,20 @@
+<style>
+    body {
+        background: #333;
+    }
+</style>
+
+<script>
+    function visit(url) {
+        console.log(window.parent.frames);
+        window.parent.frames[1].location.href = url;
+    }
+</script>
+
+<div>
+    <button onclick="window.open('https://www.redfin.com/news/all-redfin-reports/')">Redfin 报告</button>
+
+    <button onclick="window.open('https://www.redfin.com/city/16904/CA/San-Diego/housing-market')">
+        San Diego 市场报告
+    </button>
+</div>
